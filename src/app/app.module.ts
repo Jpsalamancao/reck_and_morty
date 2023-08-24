@@ -10,6 +10,8 @@ import { LocationComponent } from './components/pages/location/location.componen
 import { EpisodeComponent } from './components/pages/episode/episode.component';
 import { CardCharactersComponent } from './components/pages/card-characters/card-characters.component';
 import { NotFoundComponentComponent } from './components/pages/not-found-component/not-found-component.component';
+import {AllListComponent} from './components/pages/all-list/all-list.component';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { NotFoundComponentComponent } from './components/pages/not-found-compone
     LocationComponent,
     EpisodeComponent,
     CardCharactersComponent,
+    AllListComponent,
     NotFoundComponentComponent
   ],
   imports: [

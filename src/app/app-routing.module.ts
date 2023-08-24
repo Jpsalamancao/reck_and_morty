@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'app-location', component: LocationComponent},
   { path: 'app-episode', component: EpisodeComponent},
   // { path: 'all_List', loadChildren: () => import('./components/pages/all-list/all-list.module').then(m => m.AllListModule) },
-  // { path: 'character-detailsu/:id', loadChildren: () => import('./components/pages/characters/character-details/character-details.module').then(m => m.CharacterDetailsModule) },
+  { path: 'character-detailsu/:id', loadChildren: () => import('./components/pages/characters/character-details/character-details.module').then(m => m.CharacterDetailsModule) },
   // { path: '**', component: NotFoundComponentComponent}
 ];
 

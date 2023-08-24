@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
     console.log('rerender')
@@ -15,6 +18,8 @@ export class HeaderComponent implements OnInit {
 
   currenUrl(url:string){
     console.log('url',url)
+    this.router.navigate([url]);
   }
+
 
 }

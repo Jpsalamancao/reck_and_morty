@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {identiLocation} from '../../../utils/utils'
+import {identiLocation, postSessionStorage} from '../../../utils/utils'
 import { Location } from '@angular/common';
 
 @Component({
@@ -15,7 +15,7 @@ export class CardCharactersComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    console.log('this.currentUrl =',  this.currentUrl)
+    postSessionStorage(this.currentUrl);
   }
 
 
